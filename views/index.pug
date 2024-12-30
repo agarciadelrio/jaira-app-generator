@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    link(rel="stylesheet" href="/public/styles.css")
+    script(src="/public/main.js" type="module" defer)
+    script.
+        console.log('HELLO2');
+  body(x-data="App()")
+    h1= message
+    p.p-2.bg-green-300.text-black Hot reload with Pug.js is awesome!
+    div(x-text="name")
+    main(x-ref="mainViewer")

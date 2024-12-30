@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Jaira App Generator Package",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "startOLD": "nodemon src/server.mjs --ext mjs,js,css,pug,html --watch src --watch views --watch public -- -p 8080",
-    "start": "pnpx index.js",
+    "start": "node index.js",
     "tw": "tailwindcss -i ./src/css/main.css -o ./public/styles.css --watch",
     "dev": "pnpx rollup -c -w",
     "pro": "NODE_ENV=production pnpx rollup -c -w"
@@ -15,23 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^16.0.0",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@tailwindcss/forms": "^0.5.9",
-    "@tailwindcss/typography": "^0.5.15",
-    "alpinejs": "^3.14.8",
-    "autoprefixer": "^10.4.20",
     "browser-sync": "^3.0.3",
     "chokidar": "^4.0.3",
     "http": "0.0.1-security",
     "minimist": "^1.2.8",
     "nodemon": "^3.1.9",
-    "postcss": "^8.4.49",
-    "pug": "^3.0.3",
-    "rollup": "^4.29.1",
-    "rollup-plugin-pug": "^1.1.1",
-    "tailwindcss": "^3.4.17"
+    "pug": "^3.0.3"
   }
 }

@@ -1,8 +1,11 @@
 import nodemon from 'nodemon';
 import browserSync from 'browser-sync';
+import minimist from 'minimist';
+
+const args = minimist(process.argv.slice(2));
+const port = args.p || 9090;
 
 const bs = browserSync.create();
-const port = 8080;
 
 console.log('Starting nodemon...');
 
@@ -29,9 +32,6 @@ nodemon({
 })
 .on('restart', () => {
     console.log('Nodemon restarted');
-    //setTimeout(() => {
-    //    bs.reload();
-    //}, 500); // Ajusta el retraso si es necesario
 })
 .on('quit', () => {
     console.log('Nodemon quit');
