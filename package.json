@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "bin": {
+    "jaira-app-generator": "./index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
