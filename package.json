@@ -1,7 +1,7 @@
 {
-  "name": "jaira-dev",
+  "name": "jaira-app-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Jaira App Generator Package",
   "main": "index.js",
   "type": "module",
   "scripts": {
