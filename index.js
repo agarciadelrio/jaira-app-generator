@@ -10,7 +10,7 @@ const bs = browserSync.create();
 console.log('Starting nodemon...');
 
 nodemon({
-    script: 'src/server.mjs',
+    script: './src/server.mjs',
     ext: 'mjs,js,html,css,pug',
     watch: ['src', 'views', 'public'],
     ignore: ['node_modules/'],
