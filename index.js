@@ -1,16 +1,20 @@
 import nodemon from 'nodemon';
 import browserSync from 'browser-sync';
 import minimist from 'minimist';
+import { dirname } from 'path';
 
 const args = minimist(process.argv.slice(2));
 const port = args.p || 9090;
 
 const bs = browserSync.create();
 
+const __filename = fileURLToPath(import.meta.url); // Obtiene el archivo actual
+const __dirname = dirname(__filename); // Obtiene el directorio actual
+
 console.log('Starting nodemon...');
 
 nodemon({
-    script: './src/server.mjs',
+    script: __dirname + '/src/server.mjs',
     ext: 'mjs,js,html,css,pug',
     watch: ['src', 'views', 'public'],
     ignore: ['node_modules/'],
