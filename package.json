@@ -4,15 +4,12 @@
   "description": "Jaira App Generator Package",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "tw": "tailwindcss -i ./src/css/main.css -o ./public/styles.css --watch",
-    "dev": "pnpx rollup -c -w",
-    "pro": "NODE_ENV=production pnpx rollup -c -w"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "browser-sync": "^3.0.3",
     "chokidar": "^4.0.3",
     "http": "0.0.1-security",
